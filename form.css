@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/gftyfytf.jpg);
+    background-size: cover;
+}
+.form{
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0,0,0,0.5);
+    padding: 28px;
+    margin :0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+    position: relative;
+}
+.heading{
+    font-size: 26px;
+    color: aliceblue;
+    font-weight: 600;
+    padding-bottom: 6px;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+
+.label-inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    gap: 10px;
+    padding-left: 60px;
+}
+.gender{
+    width: 95%;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+    padding-bottom: 20px;
+}
+.gender-category label{
+    width: 95%;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 5px 0;
+    color: aliceblue;
+
+}
+    
+    
+.gender-category{
+    top: 5px;
+    position:relative;
+    left: 60px;
+    
+}
+
+.user-input-box{
+     width:200px;
+    padding-bottom: 15px;
+}
+.user-input-box label{
+    width: 95%;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.user-input-box input{
+    height: 40px;
+    width: 220px;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 10px;
+}
+.gender-category input,
+.form-submit-box input{
+    cursor: pointer;
+}
+.form-submit-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button{
+    margin-top: 25px;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: 600;
+    font-family: sans-serif;
+    background-color: #ff511c;
+    color: white;
+}
+@media(max-width:600px){
+    .form{
+        min-width: 280px;
+    }
+    .heading{
+        font-size: 26px;
+        color: aliceblue;
+        font-weight: 500;
+        margin-top: 60px;
+        padding-bottom: 6px;
+        text-align: center;
+        text-shadow: 2px 2px 2px black;
+        border-bottom: solid 1px white;
+    }
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .label-inputs{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+    
